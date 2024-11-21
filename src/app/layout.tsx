@@ -2,19 +2,14 @@ import { ThemeProvider } from "@/components/theme"
 import { ReactQueryProvider } from "@/react-query/provider"
 import { ReduxProvider } from "@/redux/provider"
 import { ClerkProvider } from "@clerk/nextjs"
-import type { Metadata } from "next"
 import { Plus_Jakarta_Sans } from "next/font/google"
-// import { Toaster } from "sonner"
 import "./globals.css"
 import { Toaster } from "@/components/ui/sonner"
+import { SITE_CONFIG } from "@/config"
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-    title: "GenixAI",
-    description: "An advanced learning management system with Ai features and custom domain",
-}
-
+export const metadata= SITE_CONFIG
 export default function RootLayout({
     children,
 }: Readonly<{

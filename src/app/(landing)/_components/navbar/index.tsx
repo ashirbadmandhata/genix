@@ -1,17 +1,19 @@
 // import GlassSheet from "@/components/global/glass-sheet"
-import GlassSheet from "@/components/global/glass-sheet"
-import { Button } from "@/components/ui/button"
-import { Logout } from "@/icons"
-import { MenuIcon } from "lucide-react"
-import Link from "next/link"
-import Menu from "./menu"
+import GlassSheet from "@/components/global/glass-sheet";
+import { Button } from "@/components/ui/button";
+import { Logout } from "@/icons";
+import { Brain, MenuIcon } from "lucide-react";
+import Link from "next/link";
+import Menu from "./menu";
 
-type Props = {}
+type Props = {};
 
 const LandingPageNavbar = (props: Props) => {
   return (
     <div className="w-full flex justify-between sticky top-0 items-center py-5 z-50">
-      <p className="font-bold text-2xl">GeniXAI</p>
+      <p className="flex items-center font-bold text-2xl">
+        <Brain className="mr-2" /> GeniXAI
+      </p>
       <Menu orientation="desktop" />
       <div className="flex gap-2">
         <Link href="/sign-in">
@@ -35,7 +37,7 @@ const LandingPageNavbar = (props: Props) => {
         </GlassSheet>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LandingPageNavbar
+export default LandingPageNavbar;
