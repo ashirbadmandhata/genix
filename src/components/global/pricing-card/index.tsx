@@ -151,7 +151,7 @@ const PricingCards = () => {
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 10 }}
                                         transition={{ duration: 0.3, type: "spring", bounce: 0.25 }}
-                                        className="px-2 py-0.5 ml-2 rounded-md bg-purple-500 text-foreground text-sm font-medium"
+                                        className="px-2 py-0.5 ml-2 rounded-md bg-green-500 text-foreground text-sm font-medium"
                                     >
                                         -12%
                                     </motion.span>
@@ -161,7 +161,7 @@ const PricingCards = () => {
                         <CardContent className="pt-6 space-y-4">
                             {plan.features.map((feature, index) => (
                                 <div key={index} className="flex items-center gap-2">
-                                    <CheckCircleIcon className="text-purple-500 w-4 h-4" />
+                                    <CheckCircleIcon className="text-green-500 w-4 h-4" />
                                     <TooltipProvider>
                                         <Tooltip delayDuration={0}>
                                             <TooltipTrigger asChild>

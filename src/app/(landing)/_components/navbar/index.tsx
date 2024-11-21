@@ -1,3 +1,4 @@
+"use client";
 // import GlassSheet from "@/components/global/glass-sheet"
 import GlassSheet from "@/components/global/glass-sheet";
 import { Button } from "@/components/ui/button";
@@ -5,12 +6,36 @@ import { Logout } from "@/icons";
 import { Brain, MenuIcon } from "lucide-react";
 import Link from "next/link";
 import Menu from "./menu";
+import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 type Props = {};
 
 const LandingPageNavbar = (props: Props) => {
+  const [scroll, setScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 8) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="w-full flex justify-between sticky top-0 items-center py-5 z-50">
+    <div
+      className={cn(
+        "flex justify-between items-center py-5 sticky top-0 inset-x-0 h-14 w-full border-b border-transparent z-[99999] select-none",
+        scroll && "border-background/80 bg-background/40 backdrop-blur-md"
+      )}
+    >
       <p className="flex items-center font-bold text-2xl">
         <Brain className="mr-2" /> GeniXAI
       </p>

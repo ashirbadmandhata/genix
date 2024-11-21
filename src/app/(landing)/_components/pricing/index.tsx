@@ -106,7 +106,7 @@ export const PricingSection = (props: Props) => {
             <div className="flex items-center gap-2">
               <CreditCardIcon className="w-5 h-5 text-foreground" />
               <span className="text-muted-foreground">
-                Credit card required
+                Credit Not card required
               </span>
             </div>
           </div>

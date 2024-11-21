@@ -15,7 +15,7 @@ export const SITE_CONFIG: Metadata = {
         ]
     },
     openGraph: {
-        title: "GenXAI - An AI Powered LMS Platform",
+        title: "GenXAI - An AI Powered LMS(Made By Ashirbad Mandhata)",
         description: "GeniXAI is an AI powered LMS that helps you to accelerate your career path in minutes. Get started for free!",
         images: [
             {

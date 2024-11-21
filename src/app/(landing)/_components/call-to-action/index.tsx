@@ -32,9 +32,7 @@ const CallToAction = (props: Props) => {
         GeniXAI is a vibrant online community platform that empowers
         <br className="md:hidden" />
         people to connect, <br className="hidden md:block" /> collaborate, and
-        cultivate meaningful
-        <br className="md:hidden" />
-        relationships
+        cultivate meaningful, relationships <br className="hidden md:block" /> so What are yoy waiting for?
       </p>
       <div className="flex md:flex-row flex-col md:justify-center gap-5 md:mt-5 w-full">
         <Button
