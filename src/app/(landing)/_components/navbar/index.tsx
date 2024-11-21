@@ -37,7 +37,9 @@ const LandingPageNavbar = (props: Props) => {
       )}
     >
       <p className="flex items-center font-bold text-2xl">
-        <Brain className="mr-2" /> GeniXAI
+        <Link className="flex items-center font-bold text-2xl" href="/">
+          <Brain className="mr-2 inline-block" /> GeniXAI
+        </Link>
       </p>
       <Menu orientation="desktop" />
       <div className="flex gap-2">
@@ -57,6 +59,7 @@ const LandingPageNavbar = (props: Props) => {
               <MenuIcon size={30} />
             </Button>
           }
+          className="z-[100000]"
         >
           <Menu orientation="mobile" />
         </GlassSheet>
